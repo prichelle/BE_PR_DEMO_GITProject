@@ -1,0 +1,9 @@
+version: "1.0"
+info:
+  model: int-scaffold
+packages:
+- name: BE_PR_DEMO_GITProject
+  gitServerName: be_pr_wm_git
+  gitUrl: https://github.com/prichelle
+  gitUsername: prichelle
+  gitBranch: main
