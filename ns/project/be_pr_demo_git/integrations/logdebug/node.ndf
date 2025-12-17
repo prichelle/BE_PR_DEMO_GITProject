@@ -45,9 +45,8 @@
   <value name="retry_max">0</value>
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
-    <value name="createdBy">pierre.richelle@be.ibm.com</value>
-    <value name="createdDate">1765892413891</value>
-    <value name="lastModifiedDate">1765892413891</value>
+    <value name="lastModifiedBy">pierre.richelle@be.ibm.com</value>
+    <value name="lastModifiedDate">1765992077042</value>
     <value name="displayName">logdebug</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
@@ -70,6 +69,29 @@
         <number name="lineNumberForDebug" type="Long">1</number>
         <null name="mapSet"/>
         <null name="outputMapSet"/>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">0</value>
+      </record>
+      <record name="/1" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">PACKAGES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">wmAppIntegration</value>
+          <value name="groupName">wmAppIntegration;1.0</value>
+          <null name="services"/>
+        </record>
+        <Boolean name="isProjectPackage">false</Boolean>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="description">WmAppIntegration.services:createSalesOrder</value>
+          <value name="serviceName">WmAppIntegration.services:createSalesOrder</value>
+          <value name="displayName">createSalesOrder</value>
+        </record>
+        <null name="outputMapSet"/>
+        <null name="mapSet"/>
+        <number name="ui_step_index" type="Long">2</number>
+        <value name="nodePathNew">1</value>
+        <number name="nodeIndex" type="Long">1</number>
+        <number name="lineNumberForDebug" type="Long">2</number>
       </record>
     </record>
   </record>
