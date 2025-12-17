@@ -305,7 +305,7 @@
   <DATA ENCODING="XMLValues" I18N="true">
 
 <Values version="2.0">
-  <value name="xml">http://localhost:3000</value>
+  <value name="xml">http://host.docker.internal:3000</value>
 </Values>
 </DATA>
 </MAPSET>
