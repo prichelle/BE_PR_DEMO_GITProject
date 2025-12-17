@@ -10,17 +10,18 @@
   <null name="replication_services"/>
   <record name="requires" javaclass="com.wm.util.Values">
     <value name="OrderEntry">2.3.0</value>
+    <value name="L3WmAppIntegration">1.0</value>
   </record>
   <null name="listACL"/>
   <value name="webappLoad">yes</value>
   <value name="reloadWithDependentPackage">yes</value>
-  <value name="build">6</value>
+  <value name="build">7</value>
   <null name="description"/>
   <value name="created_date">16-12-2025 13:38:37 GMT</value>
   <null name="extendedProperties"/>
   <null name="target_server_version"/>
   <value name="isProjectPackage">true</value>
-  <value name="lastUpdated">2025-12-17T08:44:24.738326208Z</value>
+  <value name="lastUpdated">2025-12-17T15:19:36.509784612Z</value>
   <value name="wmProjectId">fl7732da1985e7fbe12aacb1</value>
   <value name="creator">PIERRE RICHELLE</value>
 </Values>

@@ -8,7 +8,30 @@ packages:
   gitUsername: prichelle
   gitBranch: main
 - name: OrderEntry
+  version: 2.3.0
   gitServerName: be_pr_wm_git
   gitUrl: https://github.com/prichelle
   gitUsername: prichelle
   gitBranch: master
+- name: L3WmAppIntegration
+  gitServerName: be_pr_wm_git
+  gitUrl: https://github.com/IBM
+  gitUsername: prichelle
+  gitBranch: main
+services:
+- serviceName: project.be_pr_demo_git.integrations:logdebug
+  packages:
+  - name: BE_PR_DEMO_GITProject
+    version: "1.0"
+  - name: OrderEntry
+    version: 2.3.0
+  - name: L3WmAppIntegration
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: pub.flow:debugLog
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2105
