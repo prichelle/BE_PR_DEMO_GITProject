@@ -13,11 +13,6 @@ packages:
   gitUrl: https://github.com/prichelle
   gitUsername: prichelle
   gitBranch: master
-- name: wmAppIntegration
-  gitServerName: be_pr_wm_git
-  gitUrl: https://github.com/prichelle
-  gitUsername: prichelle
-  gitBranch: main
 services:
 - serviceName: project.be_pr_demo_git.integrations:logdebug
   packages:
