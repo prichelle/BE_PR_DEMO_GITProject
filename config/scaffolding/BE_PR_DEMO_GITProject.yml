@@ -12,6 +12,11 @@ packages:
   gitUrl: https://github.com/prichelle
   gitUsername: prichelle
   gitBranch: main
+- name: OrderEntry
+  gitServerName: be_pr_wm_git
+  gitUrl: https://github.com/prichelle
+  gitUsername: prichelle
+  gitBranch: master
 services:
 - serviceName: project.be_pr_demo_git.integrations:logdebug
   packages:
