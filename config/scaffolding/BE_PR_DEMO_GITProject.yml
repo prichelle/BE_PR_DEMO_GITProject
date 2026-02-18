@@ -24,18 +24,6 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
 services:
-- serviceName: project.be_pr_demo_git.integrations:getOrderDB
-  packages:
-  - name: BE_PR_DEMO_GITProject
-    version: "1.0"
-  - name: wmAppIntegration
-    version: "1.0"
-  - name: OrderEntry
-    version: 2.3.0
-  - name: WmJDBCAdapter
-    version: 10.3.0.0.34
-    wpmServer: https://packages.webmethods.io
-    wpmRegistry: licensed
 - serviceName: project.be_pr_demo_git.integrations:logdebug
   packages:
   - name: BE_PR_DEMO_GITProject
