@@ -24,6 +24,18 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
 services:
+- serviceName: project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:mysqldb_local
+  packages:
+  - name: BE_PR_DEMO_GITProject
+    version: "1.0"
+  - name: wmAppIntegration
+    version: "1.0"
+  - name: OrderEntry
+    version: 2.3.0
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.be_pr_demo_git.integrations:logdebug
   packages:
   - name: BE_PR_DEMO_GITProject
@@ -73,33 +85,79 @@ services:
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
 configurationVariables:
+  ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldb_local.connectionManagerSettings.heartBeatInterval
+  : "0"
   ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mySQL_local_mac.connectionSettings.databaseName
   : ordermgt
   ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mySQL_local_mac.connectionManagerSettings.poolable
   : "false"
   ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mySQL_local_mac.connectionSettings.otherProperties
   : loginTimeout=60;
-  ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mySQL_local_mac.connectionSettings.user
-  : root
+  ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldb_local.connectionSettings.networkProtocol
+  : ""
   ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mySQL_local_mac.connectionSettings.driverType
   : mysql
+  ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldb_local.connectionEnabled
+  : "false"
+  ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldb_local.connectionSettings.user
+  : root
   ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mySQL_local_mac.connectionSettings.trustStore
   : ""
+  ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldb_local.connectionSettings.serverName
+  : mysqldb
+  ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldb_local.connectionSettings.trustStore
+  : ""
+  ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldb_local.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mySQL_local_mac.connectionSettings.datasourceClass
+  : com.mysql.cj.jdbc.MysqlDataSource
+  ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mySQL_local_mac.connectionSettings.portNumber
+  : "3306"
+  ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldb_local.connectionSettings.otherProperties
+  : loginTimeout=60;
+  ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mySQL_local_mac.connectionSettings.networkProtocol
+  : ""
+  ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldb_local.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mySQL_local_mac.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldb_local.connectionSettings.dbType
+  : MySQL
+  ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mySQL_local_mac.connectionEnabled
+  : "false"
+  ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldb_local.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldb_local.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldb_local.connectionSettings.password
+  : "{AES}R8T5JD08oJzYmvTAa6hLaA=="
+  ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mySQL_local_mac.connectionSettings.user
+  : root
+  ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldb_local.connectionSettings.databaseName
+  : ordermgt
+  ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldb_local.connectionSettings.keyStore
+  : ""
+  ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldb_local.connectionSettings.portNumber
+  : "3306"
+  ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldb_local.connectionManagerSettings.poolIncrementSize
+  : "1"
   ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mySQL_local_mac.connectionSettings.password
   : "{AES}R8T5JD08oJzYmvTAa6hLaA=="
   ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mySQL_local_mac.connectionSettings.serverName
   : mysqldb
   ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mySQL_local_mac.connectionSettings.dbType
   : MySQL
-  ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mySQL_local_mac.connectionSettings.datasourceClass
+  ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldb_local.connectionSettings.datasourceClass
   : com.mysql.cj.jdbc.MysqlDataSource
-  ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mySQL_local_mac.connectionSettings.portNumber
-  : "3306"
+  ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldb_local.connectionSettings.transactionType
+  : NO_TRANSACTION
   ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mySQL_local_mac.connectionSettings.keyStore
   : ""
-  ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mySQL_local_mac.connectionSettings.networkProtocol
-  : ""
-  ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mySQL_local_mac.connectionSettings.transactionType
-  : NO_TRANSACTION
-  ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mySQL_local_mac.connectionEnabled
-  : "false"
+  ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldb_local.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldb_local.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldb_local.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldb_local.connectionSettings.driverType
+  : Default
