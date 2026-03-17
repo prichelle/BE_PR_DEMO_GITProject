@@ -17,11 +17,6 @@ packages:
   version: 10.3.0.0.34
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
-- name: OrderEntry
-  gitServerName: be_pr_wm_git
-  gitUrl: https://github.com/prichelle
-  gitUsername: prichelle
-  gitBranch: master
 services:
 - serviceName: project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:mysqldb_local
   packages:
