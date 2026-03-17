@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<FLOW VERSION="3.2" CLEANUP="false">
+<FLOW VERSION="3.2" CLEANUP="true">
   <COMMENT></COMMENT>
 
   <!-- nodes -->
@@ -8,4 +8,8 @@
 <INVOKE NAME="Invoke predefined:com.wm.adapter.wmjdbc.JDBCAdapter" TIMEOUT="" SERVICE="project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:getOrders" VALIDATE-IN="" VALIDATE-OUT="">
   <COMMENT></COMMENT>
 </INVOKE>
+
+<SEQUENCE NAME="NEW" EXIT-ON="FAILURE">
+  <COMMENT></COMMENT>
+</SEQUENCE>
 </FLOW>

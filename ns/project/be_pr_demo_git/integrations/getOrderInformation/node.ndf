@@ -45,9 +45,8 @@
   <value name="retry_max">0</value>
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
-    <value name="createdBy">pierre.richelle@be.ibm.com</value>
-    <value name="createdDate">1771436284205</value>
-    <value name="lastModifiedDate">1771436284205</value>
+    <value name="lastModifiedBy">pierre.richelle@be.ibm.com</value>
+    <value name="lastModifiedDate">1773743388328</value>
     <value name="displayName">getOrderInformation</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
@@ -104,6 +103,15 @@
         </array>
         <array name="outputMap" type="object" depth="1" javaclass="java.lang.Object">
         </array>
+        <value name="nodePathForDebug">0</value>
+        <number name="ui_step_index" type="Long">1</number>
+        <value name="nodePathNew">0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">1</number>
+      </record>
+      <record name="/1" javaclass="com.wm.util.Values">
+        <value name="itemType">ALL</value>
+        <value name="name">NEW</value>
       </record>
     </record>
   </record>
