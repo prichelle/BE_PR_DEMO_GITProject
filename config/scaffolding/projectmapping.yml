@@ -1,0 +1,9 @@
+version: "1.0"
+projectName: BE_PR_DEMO_GITProject
+runtimes:
+- runtimeAlias: be_pr_local_mac
+  assets:
+  - name: fld_113520462_stage00.projects.fl7732da1985e7fbe12aacb1.integrations:createSalesOrder_b2b
+    type: flow
+    stepId: /0/4
+    reference: fld_113520462_stage00.projects.fl7732da1985e7fbe12aacb1.WmPackageServiceProvider.WmAppIntegration.services:createSalesOrder
