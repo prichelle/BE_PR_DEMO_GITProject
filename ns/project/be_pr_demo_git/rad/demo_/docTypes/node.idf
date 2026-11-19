@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="node_type">interface</value>
+  <value name="node_subtype">unknown</value>
+  <value name="node_nsName">project.be_pr_demo_git.rad.demo_.docTypes</value>
+  <value name="node_pkg">BE_PR_DEMO_GITProject</value>
+  <record name="node_hints" javaclass="com.wm.util.Values">
+    <value name="createdBy">pierre.richelle@be.ibm.com</value>
+    <value name="modifiedBy">pierre.richelle@be.ibm.com</value>
+    <value name="createdDate">2026-11-19T12:55:13.008886123Z</value>
+    <value name="lastModifiedDate">2026-11-19T12:55:13.008886123Z</value>
+  </record>
+  <value name="is_public">false</value>
+</Values>
