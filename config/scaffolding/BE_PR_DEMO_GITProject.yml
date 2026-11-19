@@ -35,7 +35,7 @@ services:
 - serviceName: pub.flow:debugLog
   packages:
   - name: WmPublic
-    version: 12.1.0.0.1032
+    version: 12.1.0.0.1223
 - serviceName: WmAppIntegration.services:createSalesOrder
   packages:
   - name: wmAppIntegration
@@ -43,11 +43,11 @@ services:
 - serviceName: pub.client:http
   packages:
   - name: WmPublic
-    version: 12.1.0.0.1032
+    version: 12.1.0.0.1223
 - serviceName: pub.json:jsonStreamToDocument
   packages:
   - name: WmPublic
-    version: 12.1.0.0.1032
+    version: 12.1.0.0.1223
 - serviceName: project.be_pr_demo_git.integrations:testOrderEntry
   packages:
   - name: BE_PR_DEMO_GITProject
@@ -71,9 +71,9 @@ configurationVariables:
   ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mySQL_local_mac.connectionManagerSettings.poolable
   : "false"
   jdbcfunc.SAPTxStore.failFastMode: false
-  jdbc.SAP TxStore Pool.poolThreshold: "0"
   ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mySQL_local_mac.connectionSettings.otherProperties
   : loginTimeout=60;
+  jdbc.SAP TxStore Pool.poolThreshold: "0"
   ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldb_local.connectionSettings.networkProtocol
   : ""
   ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mySQL_local_mac.connectionSettings.driverType
@@ -83,9 +83,9 @@ configurationVariables:
   : "false"
   ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldb_local.connectionSettings.user
   : root
-  jdbc.SAP TxStore Pool.useSSL: "false"
   ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mySQL_local_mac.connectionSettings.trustStore
   : ""
+  jdbc.SAP TxStore Pool.useSSL: "false"
   ? artConnection.BE_PR_DEMO_GITProject.project.be_pr_demo_git.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.mysqldb_local.connectionSettings.serverName
   : mysqldb
   jdbc.SAP TxStore Pool.password: "{AES}nrGf3u7Wt20hFBGh5ZeEuQ=="
